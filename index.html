@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jamie Kerber ~ The Cloud Witch ✨</title>
+  <style>
+    :root {
+      --bg: #0d0d1a;
+      --surface: #16162a;
+      --accent: #af00ff;
+      --accent2: #5bc8f5;
+      --text: #f0e6ff;
+      --muted: #a89bc2;
+      --border: #2e2250;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      padding: 2.5rem 2.5rem;
+      max-width: 640px;
+      width: 100%;
+      box-shadow: 0 0 40px #af00ff22;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    p {
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 0.3rem 0;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .links a {
+      display: inline-block;
+      padding: 0.45rem 1rem;
+      border-radius: 2rem;
+      border: 1px solid var(--accent);
+      color: var(--accent2);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .links a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✨ Hello, I'm Jamie~ 💖</h1>
+    <p class="tagline">☾₊˚.⋆✩ aka "The Cloud Witch" ✧⋆⁺₊♡</p>
+
+    <p>
+      I'm a <strong>Senior Software Engineer 👩‍💻</strong>, Game Developer 👾,
+      Cloud Architect ☁️ and UI/UX Designer 💅!
+    </p>
+    <p>
+      I'm passionate about creating UI with a delicious look&amp;feel, writing
+      highly efficient code, and building fun games~
+    </p>
+    <p>
+      These days I mainly code in <strong>Flutter/Dart 🩵🎯</strong> (which I contribute to),
+      but my previous background is in TypeScript/Node.js.
+    </p>
+
+    <hr />
+
+    <h2>~What am I working on?~</h2>
+    <ul>
+      <li>💼 Consulting at <a href="https://verygood.ventures/" style="color:var(--accent2)">Very Good Ventures</a></li>
+      <li>🎮 Building the <a href="https://fluorite.game" style="color:var(--accent2)">Fluorite</a> game engine</li>
+      <li>📦 Dart/Flutter OSS packages</li>
+    </ul>
+
+    <h2>~Trivia~</h2>
+    <ul>
+      <li>💅 <strong>Hobbies</strong>: cooking, games, quirky/chic fashion, tinkering with code/electronics</li>
+      <li>🍕 <strong>Favorite snack</strong>: pizza!</li>
+      <li>💜 <strong>Pronouns</strong>: she/her</li>
+      <li>👀 <strong>Fun fact</strong>: in middle school I wrote a script to do my math homework because it seemed easier (it wasn't &mdash; but infinitely more interesting ☺️)</li>
+    </ul>
+
+    <hr />
+
+    <h2>~Links~</h2>
+    <div class="links">
+      <a href="https://github.com/kerberjg">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/jamie-kerber/">💼 LinkedIn</a>
+      <a href="https://bsky.app/profile/kerberjg.bsky.social">🦋 BlueSky</a>
+    </div>
+  </div>
+
+  <footer>
+    made with 💜 by Jamie &nbsp;·&nbsp; <em>computers are magical rocks we tricked into thinking</em>
+  </footer>
+</body>
+</html>
