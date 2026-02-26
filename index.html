@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jamie Kerber ~ The Cloud Witch ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #120d1a;
+      --surface: #1a162a;
+      --accent: #ff00d0;
+      --accent2: #ffd24c;
+      --text: #f0e6ff;
+      --muted: #a89bc2;
+      --border: #3e2250;
+
+      --github-a: #6e5494;
+      --github-b: #f0e6ff;
+      --linkedin-a: #0077b5;
+      --linkedin-b: #f0e6ff;
+      --bsky-a: #1c8ef9;
+      --bsky-b: #f0e6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      padding: 2.5rem 2.5rem;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 40px #af00ff22;
+    }
+
+    h1 {
+      font-family: 'Meow Script', cursive;
+      font-size: 3.2rem;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.25rem;
+    }
+
+    .emoji {
+      /* no background gradient */
+      background: none;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+      background-clip: initial;
+
+      color: #fff;
+      display: inline-block;
+      font-size: 1em;
+      --size: 1em;
+      line-height: 1;
+
+      width: var(--size);
+      height: var(--size);
+    }
+
+    img.emoji {
+      width: var(--size);
+      height: var(--size);
+      float: left;
+      margin-left: -0.05em;
+      margin-right: 0.36em;
+    }
+
+
+    h2 {
+      font-family: 'Meow Script', cursive;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: var(--accent);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    p {
+      line-height: 1.4;
+      color: var(--text);
+      margin-top: 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 0.3rem 0;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .links h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .links a {
+      display: inline-block;
+      padding: 0.45rem 1rem;
+      border-radius: 2rem;
+      border: 1px solid var(--accent);
+      color: var(--accent2);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .links a:hover {
+      background: var(--accent);
+      color: var(--accent2);
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* responsive footer: column on small screens, row on larger screens */
+    @media (max-width: 500px) {
+      footer {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+
+      footer.span {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1><span class="emoji">✨</span> Hello, I'm Jamie~ <span class="emoji">💖</span></h1>
+    <p class="tagline">☾₊˚.⋆✩ aka "The Cloud Witch" ✧⋆⁺₊♡</p>
+
+    <section class="intro">
+      <p>
+        I'm a <strong>Senior Software Engineer 👩‍💻</strong>, Game Developer 👾,<br>
+        Cloud Architect ☁️ and UI/UX Designer 💅!
+      </p>
+      <p>
+        I'm passionate about creating UI with a delicious look&amp;feel, writing
+        highly efficient code, and building fun games~
+      </p>
+      <p>
+        These days I mainly code in <strong>Flutter/Dart 🩵🎯</strong> (which I contribute to),<br>
+        but my previous background is in TypeScript/Node.js.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="projects">
+      <h2>~What am I working on?~</h2>
+      <ul>
+        <li>💼 Consulting at <a href="https://verygood.ventures/" style="color:var(--accent2)">Very Good Ventures</a>
+        </li>
+        <li>
+          <img class="emoji" style="--size: 1.5em" src="https://fluorite.game/fluorite.gif" />
+          Building the <a href="https://fluorite.game" style="color:var(--accent2)">Fluorite</a> game engine
+        </li>
+        <li>📦 Dart/Flutter OSS packages</li>
+      </ul>
+    </section>
+
+    <section class="trivia">
+      <h2>~Trivia~</h2>
+      <ul>
+        <li>💅 <strong>Hobbies</strong>: cooking, games, quirky/chic fashion, tinkering with code/electronics</li>
+        <li>🍕 <strong>Favorite snack</strong>: pizza!</li>
+        <li>💜 <strong>Pronouns</strong>: she/her</li>
+        <li>👀 <strong>Fun fact</strong>: in middle school I wrote a script to do my math homework because it seemed
+          easier (it wasn't &mdash; but infinitely more interesting ☺️)</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="links">
+      <h2>~Links~</h2>
+      <a style="--accent: var(--bsky-a); --accent2: var(--bsky-b);"
+        href="https://bsky.app/profile/kerberjg.bsky.social">🦋 BlueSky</a>
+      <a style="--accent: var(--github-a); --accent2: var(--github-b);" href="https://github.com/kerberjg">🐙 GitHub</a>
+      <a style="--accent: var(--linkedin-a); --accent2: var(--linkedin-b);"
+        href="https://linkedin.com/in/jamie-kerber/">💼 LinkedIn</a>
+    </section>
+  </div>
+
+  <footer>
+    <span><em>computers are magical rocks we tricked into thinking</em></span>
+    <span> &nbsp;✩&nbsp; </span>
+    <span>made with 💖 by Jamie Kerber</span>
+  </footer>
+</body>
+
+</html>
